@@ -1,7 +1,8 @@
-function getDateXDaysAfter(days) {
-  const addDays = require("date-fns/addDays");
-  console.log(addDays(new Date(22, 6, 2020), days));
-}
+const addDays = require("date-fns/addDays");
 
-const days = x;
-getDateXDaysAfter(days);
+const getDateXDaysAfter = (days) = {
+    const newDate = addDays(new Date(2020,7,22),days);
+    return `${newDate.getDate()} - ${newDate.getMonth() + 1} - ${newDate.getFullYear()}`;
+};
+
+module.exports = getDateXDaysAfter;
